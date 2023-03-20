@@ -4,14 +4,17 @@
   --medium-grey-color: #616161;
   --dark-grey-color: #424242;
   --black-color: #212121;
+  --yellow-color: #fae100;
 
   /* size */
   --larger-font-size: 6em;
+  --mobile-large-font-size: 5em;
 }
 
 body {
   font-family: 'Nanum Gothic', sans-serif;
   line-height: 2em;
+  background-color: var(--white-color);
 }
 
 .inner {
@@ -26,14 +29,16 @@ img {
 }
 
 /* MAIN PAGE */
-#main {
+#main1 {
   width: 100%;
   height: 100vh;
   background-color: var(--white-color);
   background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 0.5em;
 }
 
-#main .inner {
+#main1 .inner {
   /* background-color: pink; */
   height: 100%;
   display: flex;
@@ -42,7 +47,7 @@ img {
   align-items: center;
 }
 
-#main #who-am-i {
+#main1 #who-am-i {
   font-family: 'Bebas Neue', cursive;
   color: var(--black-color);
   font-weight: 700;
@@ -50,33 +55,47 @@ img {
   font-size: var(--larger-font-size);
   letter-spacing: .04em;
   margin-bottom: .5em;
+  background-color: var(--yellow-color);
 }
 
-#main #hello {
+#main1 #hello {
   text-align: center;
   color: var(--medium-grey-color);
   font-weight: 700;
+  font-size: 0.85em;
 }
 
-#main #hello strong {
+#main1 #hello strong {
   color: var(--dark-grey-color);
   font-size: 1.3em;
 }
 
-#main .me-smart {
+#main1 .me-smart {
   width: 20%;
   position: absolute;
   top: 0;
   right: 0;
 }
 
-#main .me-shake {
+#main1 .me-shake {
   width: 30%;
   position: absolute;
   bottom: 0;
   left: 0;
 }
 
-#main .fade-in {
+#main1 .fade-in {
   opacity: 0;
+}
+
+
+#main2 {
+  height: 100vh;
+  background-color: var(--white-color);
+}
+
+@media (max-width:400px) {
+  #main1 #who-am-i {
+    font-size: var(--mobile-large-font-size);
+  }
 }

@@ -14,3 +14,4 @@ fadeInEls.forEach(function (element, index) {
     opacity: 1,
   });
 });
+
