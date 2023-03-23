@@ -1,3 +1,4 @@
+/* COMMON */
 :root {
   /* color */
   --white-color: #fafafa;
@@ -7,8 +8,12 @@
   --yellow-color: #fae100;
 
   /* size */
-  --larger-font-size: 6em;
+  --title-font-size: 2em;
   --mobile-large-font-size: 5em;
+  --larger-font-size: 6em;
+
+  --padding-size: .5em;
+
 }
 
 body {
@@ -28,6 +33,16 @@ img {
   /* background-color: darkturquoise; */
 }
 
+.title {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-weight: 800;
+  font-size: var(--title-font-size);
+  padding: var(--padding-size);
+  font-style: italic;
+  letter-spacing: .05em;
+}
+
 /* MAIN PAGE */
 #main1 {
   width: 100%;
@@ -35,7 +50,6 @@ img {
   background-color: var(--white-color);
   background-size: cover;
   background-attachment: fixed;
-  margin-bottom: 0.5em;
 }
 
 #main1 .inner {
@@ -88,10 +102,35 @@ img {
   opacity: 0;
 }
 
-
-#main2 {
+/* MAIN2 - About me */
+#about-me {
   height: 100vh;
   background-color: var(--white-color);
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+#about-me #introduction {
+  display: flex;
+  gap: calc(var(--padding-size)*2);
+  padding: var(--padding-size);
+}
+
+#about-me article img {
+  /* background-color: paleturquoise; */
+  width: 30%;
+  height: 70%;
+  align-self: flex-end;
+}
+
+#about-me article .contents {
+  text-align: justify;
+  color: var(--dark-grey-color);
+}
+
+@media (max-width: 456px) {
+  #about-me #introduction {
+    flex-direction: column;
+  }
 }
 
 @media (max-width:400px) {
