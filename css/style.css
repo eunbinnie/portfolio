@@ -2,15 +2,17 @@
 :root {
   /* color */
   --white-color: #fafafa;
+  --light-grey-color: #BDBDBD;
   --medium-grey-color: #616161;
   --dark-grey-color: #424242;
   --black-color: #212121;
   --yellow-color: #fae100;
 
   /* size */
-  --title-font-size: 2em;
+  --title-font-size: 2.2vw;
+  --subject-font-size: 6vw;
   --mobile-large-font-size: 5em;
-  --larger-font-size: 6em;
+  --larger-font-size: 12vw;
 
   --padding-size: .5em;
 
@@ -30,18 +32,14 @@ body {
 
 img {
   display: block;
-  /* background-color: darkturquoise; */
 }
 
-.title {
-  font-family: 'Roboto', sans-serif;
-  text-align: center;
-  font-weight: 800;
-  font-size: var(--title-font-size);
-  padding: var(--padding-size);
-  font-style: italic;
-  letter-spacing: .05em;
+.subject {
+  font-size: var(--subject-font-size);
+  font-weight: bold;
+  margin: var(--padding-size);
 }
+
 
 /* MAIN PAGE */
 #main1 {
@@ -53,7 +51,6 @@ img {
 }
 
 #main1 .inner {
-  /* background-color: pink; */
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -102,37 +99,118 @@ img {
   opacity: 0;
 }
 
-/* MAIN2 - About me */
-#about-me {
-  height: 100vh;
+
+/* MAIN2 - profile */
+#profile {
   background-color: var(--white-color);
-  font-family: 'Nanum Gothic', sans-serif;
+  height: 100vh;
 }
 
-#about-me #introduction {
+.profile__introduce {
   display: flex;
-  gap: calc(var(--padding-size)*2);
-  padding: var(--padding-size);
+  flex-direction: column;
+  align-items: center;
 }
 
-#about-me article img {
-  /* background-color: paleturquoise; */
-  width: 30%;
-  height: 70%;
-  align-self: flex-end;
+.profile__introduce .profile-img {
+  width: 20%;
+  margin-bottom: var(--padding-size);
 }
 
-#about-me article .contents {
-  text-align: justify;
+.profile__introduce h3 {
+  font-size: var(--title-font-size);
+  font-weight: 700;
+  color: var(--black-color);
+}
+
+.profile__introduce h5 {
+  font-weight: 500;
   color: var(--dark-grey-color);
 }
 
-@media (max-width: 456px) {
-  #about-me #introduction {
-    flex-direction: column;
-  }
+.profile__introduce .job {
+  background-color: pink;
+  margin-top: var(--padding-size);
+  padding: calc(var(--padding-size)*1/2) calc(var(--padding-size)*3);
+  border-radius: 30em;
+  color: var(--white-color);
+  font-size: var(--title-font-size);
+  font-weight: 700;
 }
 
+.profile__introduce .comment {
+  font-style: italic;
+  color: var(--dark-grey-color);
+  margin: var(--padding-size) 0;
+}
+
+.profile__section {
+  background-color: pink;
+  width: 80%;
+  height: 100px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.profile__section .title {
+  color: var(--dark-grey-color);
+  font-weight: bold;
+}
+
+.profile__section .contents {
+  font-size: .9rem;
+}
+
+
+/* CONTACT */
+#contact {
+  height: 100vh;
+  background-image: url(../img/contact_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#contact .inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#contact .contact__comment {
+  text-align: center;
+  color: var(--medium-grey-color);
+  line-height: 3em;
+  font-size: var(--title-font-size);
+}
+
+#contact .contact__comment .mail {
+  color: var(--black-color);
+  font-weight: bold;
+}
+
+#contact img {
+  width: 40%;
+}
+
+
+/* FOOTER */
+footer {
+  /* background-color: var(--white-color); */
+  background-color: #fff;
+  padding: calc(var(--padding-size)*2);
+}
+
+footer .footer__copyright {
+  display: block;
+  font-size: var(--title-font-size);
+  color: var(--light-grey-color);
+  text-align: center;
+}
+
+/* responsive */
 @media (max-width:400px) {
   #main1 #who-am-i {
     font-size: var(--mobile-large-font-size);

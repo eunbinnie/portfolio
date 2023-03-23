@@ -18,17 +18,8 @@ fadeInEls.forEach(function (element, index) {
 });
 
 
-// about me - scrollMagic
-const controller = new ScrollMagic.Controller();
+// footer - 올해 년도 출력
+const year = document.querySelector('.year');
 
-const introductionEls = TweenMax.from('#introduction', .8, {
-  x: -200,
-});
-
-const scene = new ScrollMagic.Scene({
-  triggerElement: "#about-img",
-  // triggerHook: 0.8,
-})
-  .setTween(introductionEls)
-  .addTo(controller)
-  ;
+const dateYear = new Date().getFullYear();
+year.innerText = dateYear;
