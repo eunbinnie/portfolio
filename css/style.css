@@ -6,13 +6,12 @@
   --medium-grey-color: #616161;
   --dark-grey-color: #424242;
   --black-color: #212121;
-  --yellow-color: #fae100;
 
   /* size */
-  --title-font-size: 2.2vw;
-  --subject-font-size: 6vw;
+  --title-font-size: 1.5em;
+  --subject-font-size: 3em;
   --mobile-large-font-size: 5em;
-  --larger-font-size: 12vw;
+  --larger-font-size: 6em;
 
   --padding-size: .5em;
 
@@ -66,7 +65,6 @@ img {
   font-size: var(--larger-font-size);
   letter-spacing: .04em;
   margin-bottom: .5em;
-  background-color: var(--yellow-color);
 }
 
 #main1 #hello {
@@ -85,14 +83,14 @@ img {
   width: 20%;
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
 }
 
 #main1 .me-shake {
   width: 30%;
   position: absolute;
   bottom: 0;
-  left: 0;
+  right: 0;
 }
 
 #main1 .fade-in {
@@ -103,7 +101,6 @@ img {
 /* MAIN2 - profile */
 #profile {
   background-color: var(--white-color);
-  height: 100vh;
 }
 
 .profile__introduce {
@@ -163,13 +160,7 @@ img {
 
 
 /* CONTACT */
-#contact {
-  height: 100vh;
-  background-image: url(../img/contact_bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
+#contact {}
 
 #contact .inner {
   height: 100%;
@@ -205,7 +196,7 @@ footer {
 
 footer .footer__copyright {
   display: block;
-  font-size: var(--title-font-size);
+  /* font-size: var(--title-font-size); */
   color: var(--light-grey-color);
   text-align: center;
 }
