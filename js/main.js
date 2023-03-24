@@ -17,9 +17,24 @@ fadeInEls.forEach(function (element, index) {
   });
 });
 
+// side menu 출력
+const menuIcon = document.getElementById("menu__icon");
+const sideMenu = document.getElementById("side__menu");
+const closeBtn = document.querySelector("#side__menu span");
+
+menuIcon.addEventListener('click', function () {
+  menuIcon.classList.add('hidden');
+  sideMenu.classList.remove('hidden');
+});
+
+closeBtn.addEventListener('click', function () {
+  sideMenu.classList.add('hidden');
+  menuIcon.classList.remove('hidden');
+});
+
 
 // footer - 올해 년도 출력
-const year = document.querySelector('.year');
+// const year = document.querySelector('.year');
 
-const dateYear = new Date().getFullYear();
-year.innerText = dateYear;
+// const dateYear = new Date().getFullYear();
+// year.innerText = dateYear;

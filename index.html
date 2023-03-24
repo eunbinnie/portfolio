@@ -15,6 +15,8 @@
     rel="stylesheet">
   <!-- reset css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <!-- material symbols -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
   <link rel="stylesheet" href="./css/style.css" />
 
@@ -35,6 +37,7 @@
   <!-- MAIN1: title -->
   <main id="main1">
     <div class="inner">
+
       <img src="./img/eunbin_light.png" alt="smart eunbin" class="img fade-in floating me-smart" />
 
       <h2 id="who-am-i"><em>Who am I ?</em></h2>
@@ -47,64 +50,25 @@
       <img src="./img/eunbin_hi.png" alt="Hi" class="img fade-in floating me-shake" />
 
     </div>
-  </main>
 
-
-  <!-- MAIN2: about me -->
-  <main id="profile">
-    <div class="inner">
-      <article class="profile__introduce">
-
-        <img src="./img/profile.png" alt="eunbin profile" class="profile-img" />
-        <h3>이은빈 (만 23세)</h3>
-        <div class="job">신입 웹 퍼블리셔</div>
-
-        <span class="comment">
-          " 뭐~라고 한 줄을 쓸까나~~~~~~ "
-        </span>
-
-        <section class="profile__section">
-          <div class="title">title</div>
-          <div class="contents">내요오오옹</div>
-        </section>
-
-        <section class="profile__section">
-          <div class="title">title</div>
-          <div class="contents">내요오오옹</div>
-        </section>
-
-        <section class="profile__section">
-          <div class="title">title</div>
-          <div class="contents">내요오오옹</div>
-        </section>
-      </article>
-    </div>
-  </main>
-
-
-  <!-- contact page -->
-  <main id="contact">
-    <div class="inner">
-      <h2 class="subject">CONTACT</h2>
-      <div class="contact__comment">
-        저의 포트폴리오를 봐주셔서 감사합니다.<br>
-        저와 이야기를 나눠보고 싶으시다면<br>
-        <div class="mail"><strong>dmsqlsdl54@naver.com</strong></div>
-        으로 연락 주시면 2일 내에 답장 드리겠습니다.<br>
-      </div>
-      <img src="./img/contact.png" alt="contact me" />
-    </div>
-  </main>
-
-
-  <!-- footer -->
-  <footer>
-    <div class="inner">
-      <span class="footer__copyright">
-        Copyright &copy; <span class="year"></span>. EUNBIN LEE All rights reserved.
+    <header id="menu__icon">
+      <span class="material-icons">
+        menu
       </span>
-    </div>
-  </footer>
+    </header>
+
+    <nav id="side__menu" class="hidden">
+      <ul>
+        <span class="material-icons">
+          clear
+        </span>
+        <li>About</li>
+        <li>Projects</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+
+  </main>
 </body>
 
 </html>
