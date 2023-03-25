@@ -1,4 +1,5 @@
-// main page -typeit
+// main first page
+// typeit
 const typeit = document.getElementById("who-am-i");
 
 new TypeIt(typeit, {
@@ -7,7 +8,7 @@ new TypeIt(typeit, {
   cursor: 0
 }).go();
 
-// main page - fade in
+// fade in
 const fadeInEls = document.querySelectorAll(".fade-in");
 
 fadeInEls.forEach(function (element, index) {

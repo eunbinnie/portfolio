@@ -28,6 +28,7 @@ body {
 
 .inner {
   max-width: 1280px;
+  height: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -41,14 +42,14 @@ img {
 }
 
 
-/* MAIN PAGE */
-#main1 {
+/* MAIN FIRST PAGE */
+#first-page {
   width: 100%;
   height: 100vh;
   position: relative;
 }
 
-#main1 .inner {
+#first-page .inner {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -56,7 +57,7 @@ img {
   align-items: center;
 }
 
-#main1 #who-am-i {
+#first-page #who-am-i {
   font-family: 'Bebas Neue', cursive;
   font-weight: 700;
   font-style: italic;
@@ -65,38 +66,38 @@ img {
   margin-bottom: var(--padding-size);
 }
 
-#main1 #hello {
+#first-page #hello {
   text-align: center;
   color: var(--medium-grey-color);
   font-weight: 700;
 }
 
-#main1 #hello strong {
+#first-page #hello strong {
   color: var(--dark-grey-color);
   font-size: var(--medium-font-size);
 }
 
-#main1 .me-smart {
+#first-page .me-smart {
   width: 20%;
   position: absolute;
   top: 0;
   left: 0;
 }
 
-#main1 .me-shake {
+#first-page .me-shake {
   width: 30%;
   position: absolute;
   bottom: 0;
   right: 0;
 }
 
-#main1 .fade-in {
+#first-page .fade-in {
   opacity: 0;
 }
 
 /* side menu */
 #menu__icon {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   margin: var(--padding-size);
@@ -111,7 +112,7 @@ img {
   background-color: rgba(255, 255, 255, 0.7);
   width: 20%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   right: 0;
@@ -135,6 +136,14 @@ img {
   align-self: flex-end;
   cursor: pointer;
 }
+
+
+/* PROFILE PAGE */
+#profile-page {
+  height: 100vh;
+}
+
+#profile-page .inner {}
 
 
 /* 반응형 responsive */
