@@ -12,6 +12,7 @@
   --small-font-size: .9em;
   --basic-font-size: 1em;
   --medium-font-size: 1.3em;
+  --banner-font-size: 4em;
   --biggest-font-size: 6em;
 
   --padding-size: .5em;
@@ -63,12 +64,16 @@ img {
   align-items: center;
 }
 
-#first-page #who-am-i {
+#first-page #who-am-i,
+#introduce .introduce__title p {
   font-family: 'Bebas Neue', cursive;
   font-weight: 700;
+  letter-spacing: .04em;
+}
+
+#first-page #who-am-i {
   font-style: italic;
   font-size: var(--biggest-font-size);
-  letter-spacing: .04em;
   margin-bottom: var(--padding-size);
 }
 
@@ -102,7 +107,7 @@ img {
 }
 
 /* side menu */
-#menu__icon {
+#first-page #menu__icon {
   position: fixed;
   top: 0;
   right: 0;
@@ -111,11 +116,11 @@ img {
   z-index: 9;
 }
 
-#menu__icon span {
+#first-page #menu__icon span {
   vertical-align: middle;
 }
 
-#side__menu {
+#first-page #side__menu {
   background-color: rgba(255, 255, 255, 0.7);
   width: 30%;
   height: 100%;
@@ -126,30 +131,28 @@ img {
   z-index: 9;
 }
 
-#side__menu ul {
+#first-page #side__menu ul {
   display: flex;
   flex-direction: column;
   gap: var(--padding-size);
   margin: var(--padding-size);
 }
 
-#side__menu li {
+#first-page #side__menu li {
   cursor: pointer;
   margin: var(--padding-size);
   color: var(--medium-grey-color);
   font-size: var(--small-font-size);
 }
 
-#side__menu span {
+#first-page #side__menu span {
   align-self: flex-end;
   cursor: pointer;
 }
 
 
 /* PROFILE PAGE */
-#profile-page {
-  height: 100vh;
-}
+#profile-page {}
 
 #profile-page .inner {
   width: 100%;
@@ -227,7 +230,6 @@ img {
 }
 
 /* profile - charactor */
-
 #profile__about .about__charactor ul.charactors {
   margin-top: var(--margin-size);
   display: flex;
@@ -269,11 +271,33 @@ img {
 }
 
 
+/* INTRODUCE */
 #introduce {
-  /* height: 100vh; */
+  margin-top: calc(var(--margin-size)*4);
+  padding: var(--padding-size);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#introduce .inroduce__contents {}
+#introduce .inroduce__contents {
+  width: 70%;
+  color: var(--dark-grey-color);
+  padding: var(--padding-size);
+  text-align: justify;
+}
+
+#introduce .introduce__title {
+  height: 100%;
+}
+
+#introduce .introduce__title p {
+  height: 100%;
+  color: var(--pink-color);
+  font-size: var(--banner-font-size);
+  line-height: calc(var(--line-height)*1/2);
+  transform: rotate(90deg);
+}
 
 
 /* 반응형 responsive */
@@ -283,6 +307,25 @@ img {
     --basic-font-size: .9em;
     --medium-font-size: 1.2em;
     --biggest-font-size: 5em;
+  }
+}
+
+@media (max-width:900px) {
+  :root {
+    --banner-font-size: 4em;
+  }
+
+  #introduce {
+    flex-direction: column;
+  }
+
+  #introduce .introduce__title {
+    align-self: flex-end;
+    padding: var(--margin-size);
+  }
+
+  #introduce .introduce__title p {
+    transform: none;
   }
 }
 
