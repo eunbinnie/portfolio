@@ -35,7 +35,7 @@ closeBtn.addEventListener('click', function () {
 
 
 // footer - 올해 년도 출력
-// const year = document.querySelector('.year');
+const year = document.querySelector('.year');
 
-// const dateYear = new Date().getFullYear();
-// year.innerText = dateYear;
+const dateYear = new Date().getFullYear();
+year.innerText = dateYear;

@@ -12,6 +12,7 @@
   --small-font-size: .9em;
   --basic-font-size: 1em;
   --medium-font-size: 1.3em;
+  --title-font-size: 3em;
   --banner-font-size: 4em;
   --biggest-font-size: 6em;
 
@@ -152,7 +153,6 @@ img {
 
 
 /* PROFILE PAGE */
-#profile-page {}
 
 #profile-page .inner {
   width: 100%;
@@ -277,7 +277,7 @@ img {
   margin-top: calc(var(--margin-size)*4);
   padding: var(--padding-size);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -288,10 +288,6 @@ img {
   text-align: justify;
 }
 
-#introduce .introduce__title {
-  height: 100%;
-}
-
 #introduce .introduce__title p {
   height: 100%;
   color: var(--pink-color);
@@ -300,6 +296,56 @@ img {
   transform: rotate(90deg);
 }
 
+
+/* CONTACT */
+#contact .contact__title {
+  font-size: var(--title-font-size);
+  font-weight: 700;
+  text-align: center;
+  margin: var(--margin-size);
+}
+
+#contact .contact__detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact .contact__detail .contact__mail {
+  display: flex;
+  align-items: center;
+  font-size: var(--medium-font-size);
+  color: var(--dark-grey-color);
+}
+
+#contact .contact__detail .contact__mail .material-icons {
+  background-color: var(--light-grey-color);
+  border-radius: 50%;
+  padding: var(--padding-size);
+  margin-right: var(--margin-size);
+}
+
+#contact .contact__detail .contact__image {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#contact .contact__detail .contact__image img {
+  width: 50%;
+}
+
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: var(--margin-size) 0;
+}
+
+footer .copyright {
+  font-size: var(--small-font-size);
+}
 
 /* 반응형 responsive */
 /* 랩톱 - 1024px */
@@ -313,6 +359,7 @@ img {
 
 @media (max-width:900px) {
   :root {
+    --title-font-size: 2.5em;
     --banner-font-size: 4em;
   }
 
@@ -366,6 +413,17 @@ img {
   :root {
     --basic-font-size: .8em;
     --small-font-size: .7em;
+
+    --padding-size: .3em;
+  }
+
+  #contact .contact__mail {
+    margin-top: var(--margin-size);
+  }
+
+  #contact .contact__detail {
+    flex-direction: column;
+    gap: var(--margin-size);
   }
 }
 
