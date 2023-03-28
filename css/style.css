@@ -273,10 +273,11 @@ img {
 
 /* INTRODUCE */
 #introduce {
+  max-width: 1280px;
   margin-top: calc(var(--margin-size)*4);
   padding: var(--padding-size);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
