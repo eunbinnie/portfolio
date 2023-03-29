@@ -12,7 +12,7 @@
   --small-font-size: .9em;
   --basic-font-size: 1em;
   --medium-font-size: 1.3em;
-  --title-font-size: 3em;
+  --title-font-size: 2em;
   --banner-font-size: 4em;
   --biggest-font-size: 6em;
 
@@ -108,7 +108,7 @@ img {
 }
 
 /* side menu */
-#first-page #menu__icon {
+/* #first-page #menu__icon {
   position: fixed;
   top: 0;
   right: 0;
@@ -149,7 +149,7 @@ img {
 #first-page #side__menu span {
   align-self: flex-end;
   cursor: pointer;
-}
+} */
 
 
 /* PROFILE PAGE */
@@ -359,7 +359,7 @@ footer .copyright {
 
 @media (max-width:900px) {
   :root {
-    --title-font-size: 2.5em;
+    --title-font-size: 1.5em;
     --banner-font-size: 4em;
   }
 
