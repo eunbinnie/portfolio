@@ -297,7 +297,86 @@ img {
 }
 
 
+/* PROJECTS */
+#project {
+  margin: var(--margin-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#project .inner {}
+
+#project .project__title {
+  font-size: var(--title-font-size);
+  text-align: center;
+}
+
+#project .project__img {
+  width: 40vw;
+  height: 40vw;
+}
+
+#project .web__title {
+  margin: var(--margin-size);
+}
+
+#project .project__web,
+#project .project__js {
+  display: flex;
+  gap: var(--padding-size);
+}
+
+#project .project__img {
+  width: 20vw;
+  height: 20vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#project .project__img .color-opacity {
+  width: 20vw;
+  height: 20vw;
+  background-color: rgba(189, 189, 189, .8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-weight: 700;
+  font-size: var(--small-font-size);
+}
+
+#project .project__img .color-opacity.hidden {
+  display: none;
+}
+
+#project .project__web .web__starbucks {
+  background-image: url('../img/starbucks_thumbnail.png');
+}
+
+#project .project__web .web__poolyou {
+  background-image: url('https://images.unsplash.com/photo-1597307673540-7749c8acab96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBsYW50JTIwaGFuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60');
+}
+
+#project .project__js .js__momentum {
+  background-image: url('../img/momentum_thumbnail.jpeg');
+}
+
+#project .project__js .js__shopping {
+  background-image: url('../img/shoppingmall_thumbnail.png');
+}
+
+#project .project__js .js__canvas {
+  background-image: url('../img/canvas_thumbnail.png');
+}
+
 /* CONTACT */
+#contact {
+  margin: var(--margin-size);
+}
+
 #contact .contact__title {
   font-size: var(--title-font-size);
   font-weight: 700;
@@ -375,6 +454,16 @@ footer .copyright {
   #introduce .introduce__title p {
     transform: none;
   }
+
+  #project .project__web .project__img {
+    width: 30vw;
+    height: 30vw;
+  }
+
+  #project .project__web .project__img .color-opacity {
+    width: 30vw;
+    height: 30vw;
+  }
 }
 
 /* 태블릿 - 768px */
@@ -415,6 +504,16 @@ footer .copyright {
     --small-font-size: .7em;
 
     --padding-size: .3em;
+  }
+
+  #project .project__web .project__img {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  #project .project__web .project__img .color-opacity {
+    width: 40vw;
+    height: 40vw;
   }
 
   #contact .contact__mail {

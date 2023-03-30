@@ -34,6 +34,25 @@ fadeInEls.forEach(function (element, index) {
 // });
 
 
+// project - hover
+const mainProject = document.querySelectorAll('.project__img');
+
+function onMouseEnter(event) {
+  const hover = event.target.childNodes[1];
+  hover.classList.remove('hidden');
+}
+
+function onMouseLeave(event) {
+  const hover = event.target.childNodes[1];
+  hover.classList.add('hidden');
+}
+
+mainProject.forEach((project) => {
+  project.addEventListener('mouseenter', onMouseEnter);
+  project.addEventListener('mouseleave', onMouseLeave);
+});
+
+
 // footer - 올해 년도 출력
 const year = document.querySelector('footer .year');
 
