@@ -8,6 +8,7 @@ new TypeIt(typeit, {
   cursor: 0
 }).go();
 
+
 // fade in
 const fadeInEls = document.querySelectorAll(".fade-in");
 
@@ -17,21 +18,6 @@ fadeInEls.forEach(function (element, index) {
     opacity: 1,
   });
 });
-
-// side menu 출력
-// const menuIcon = document.getElementById("menu__icon");
-// const sideMenu = document.getElementById("side__menu");
-// const closeBtn = document.querySelector("#side__menu span");
-
-// menuIcon.addEventListener('click', function () {
-//   menuIcon.classList.add('hidden');
-//   sideMenu.classList.remove('hidden');
-// });
-
-// closeBtn.addEventListener('click', function () {
-//   sideMenu.classList.add('hidden');
-//   menuIcon.classList.remove('hidden');
-// });
 
 
 // project - hover
