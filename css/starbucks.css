@@ -1,0 +1,8 @@
+.info__img {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.info__img .computer__page {
+  width: 70%;
+}

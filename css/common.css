@@ -15,7 +15,7 @@
   --padding-size: .4em;
   --margin-size: 3em;
   --border-radius: 10px;
-  --line-height: 1.5;
+  --line-height: 2;
 }
 
 body {
@@ -100,6 +100,14 @@ img {
 }
 
 @media (max-width:768px) {
+  :root {
+    /* size */
+    --small-font-size: .7em;
+    --basic-font-size: .9em;
+    --medium-font-size: 1em;
+    --biggest-font-size: 2.5em;
+  }
+
   #main__page .inner {
     padding: var(--padding-size);
   }
@@ -109,8 +117,11 @@ img {
   }
 }
 
-@media (max-width:350px) {
+@media (max-width:425px) {
   :root {
+    --small-font-size: .5em;
+    --basic-font-size: .8em;
+    --medium-font-size: .9em;
     --biggest-font-size: 2em;
   }
 }
