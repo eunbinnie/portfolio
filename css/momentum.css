@@ -1,0 +1,39 @@
+#main__page .info__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--margin-size);
+}
+
+#main__page .img__mobile {
+  width: 20%;
+  height: 100%;
+}
+
+#main__page .whole__page {
+  width: 65%;
+  height: 100%;
+}
+
+@media (max-width:768px) {
+  #main__page .info__img {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  #main__page .img__mobile {
+    width: 40%;
+  }
+
+  #main__page .whole__page {
+    width: 100%;
+  }
+}
+
+@media (max-width:425px) {
+  #main__page .info__img {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+}

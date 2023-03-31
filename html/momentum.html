@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Drawing board</title>
+  <title>Momentum(weather, memo)</title>
 
   <!-- reset css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
@@ -16,43 +16,49 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nanum+Gothic&family=Roboto&display=swap"
     rel="stylesheet">
 
-  <link rel="stylesheet" href="../css/detail.css" />
+  <link rel="stylesheet" href="../css/common.css" />
+  <link rel="stylesheet" href="../css/momentum.css" />
 </head>
 
 <body>
   <main id="main__page">
     <div class="inner">
 
-      <h1 class="main__title title">
-        DRAWING BOARD<br>
-        WEBSITE
-      </h1>
+      <article class="info">
+        <section class="info__main">
+          <h1 class="main__title title">
+            TO DO LIST<br>
+            WEBSITE
+          </h1>
+          <h3 class="version title">RESPONSIVE | COMPUTER, TABLET, MOBILE</h3>
+          <button>
+            <a href="https://eunbinnie.github.io/challenge_goals/">
+              사이트 바로가기
+            </a>
+          </button>
 
-      <h3 class="version title">
-        only computer
-      </h3>
+          <h2 class="about title">ABOUT THE PROJECT</h2>
 
-      <button>
-        <a href="https://eunbinnie.github.io/meme_maker/">
-          사이트 바로가기
-        </a>
-      </button>
+          <section class="about__contents">
+            <span class="lecture">
+              강의 | Nomad Coders 바닐라 JS 2주 완성반 (졸업작품)
+            </span>
 
-      <h2 class="about title">ABOUT THE PROJECT</h2>
+            <span class="period">
+              기간 | 2023.02.03 ~ 2023.02.17
+            </span>
 
-      <span class="lecture">
-        강의 | Nomad Coders 바닐라 JS 2주 완성반
-      </span>
+            <span class="contribution">기여도 | 100%</span>
+          </section>
+        </section>
 
-      <span class="period">
-        기간 | 2023.02.03 ~ 2023.02.17
-      </span>
+        <section class="info_detail"></section>
+      </article>
 
-      <span class="contribution">
-        기여도 | 100%
-      </span>
-
-      <img src="../img/momentum-com.png" alt="momentum com ver whole page" class="whole__page" />
+      <section class="info__img">
+        <img src="../img/momentum_mobile.jpg" alt="" class="img__mobile" />
+        <img src="../img/momentum_com.png" alt="momentum com ver whole page" class="whole__page" />
+      </section>
 
     </div>
   </main>

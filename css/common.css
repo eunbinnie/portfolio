@@ -15,6 +15,7 @@
   --padding-size: .4em;
   --margin-size: 3em;
   --border-radius: 10px;
+  --line-height: 1.5;
 }
 
 body {
@@ -34,14 +35,16 @@ button {
   all: unset;
 }
 
+img {
+  display: block;
+}
+
 .title {
   font-family: 'Bebas Neue', cursive;
 }
 
 /* MAIN PAGE */
 #main__page {
-  background-size: cover;
-  background-position: center;
   padding: var(--margin-size);
 }
 
@@ -50,6 +53,11 @@ button {
   border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
+}
+
+#main__page .info {
+  display: flex;
+  gap: var(--margin-size);
 }
 
 #main__page .main__title {
@@ -72,10 +80,8 @@ button {
   border-radius: var(--border-radius);
 }
 
-#main__page img.whole__page {
+#main__page img {
   margin-top: var(--margin-size);
-  align-self: flex-end;
-  width: 60%;
   border: 2px solid var(--black-color);
   border-radius: var(--border-radius);
 }
@@ -86,10 +92,10 @@ button {
   padding-bottom: var(--padding-size);
 }
 
-#main__page .lecture,
-#main__page .period,
-#main__page .contribution {
-  padding: var(--padding-size);
+#main__page .about__contents {
+  display: flex;
+  flex-direction: column;
+  line-height: var(--line-height);
   font-size: var(--small-font-size);
 }
 
@@ -98,17 +104,13 @@ button {
     padding: var(--padding-size);
   }
 
-  #main__page img.whole__page {
-    width: 80%;
+  #main__page .info {
+    flex-direction: column;
   }
 }
 
 @media (max-width:350px) {
   :root {
     --biggest-font-size: 2em;
-  }
-
-  #main__page img.whole__page {
-    width: 100%;
   }
 }
