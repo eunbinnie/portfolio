@@ -264,6 +264,8 @@ a {
 #project .project__title {
   font-size: var(--title-font-size);
   text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 400;
 }
 
 #project .project__img {
@@ -339,9 +341,10 @@ a {
 
 #contact .contact__title {
   font-size: var(--title-font-size);
-  font-weight: 700;
   text-align: center;
   margin: var(--margin-size);
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 400;
 }
 
 #contact .contact__detail {
@@ -353,14 +356,13 @@ a {
 #contact .contact__detail .contact__mail {
   display: flex;
   align-items: center;
-  font-size: var(--medium-font-size);
   color: var(--dark-grey-color);
 }
 
 #contact .contact__detail .contact__mail .material-icons {
   background-color: var(--light-grey-color);
   border-radius: 50%;
-  padding: var(--padding-size);
+  padding: calc(var(--padding-size)*1/2);
   margin-right: var(--margin-size);
 }
 
