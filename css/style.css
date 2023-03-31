@@ -355,15 +355,29 @@ a {
 
 #contact .contact__detail .contact__mail {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   color: var(--dark-grey-color);
 }
 
+#contact .contact__detail .contact__mail .email {
+  display: flex;
+  align-items: flex-start;
+}
+
 #contact .contact__detail .contact__mail .material-icons {
-  background-color: var(--light-grey-color);
-  border-radius: 50%;
-  padding: calc(var(--padding-size)*1/2);
-  margin-right: var(--margin-size);
+  margin-right: var(--padding-size);
+}
+
+#contact .contact__detail .contact__mail .github {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#contact .contact__detail .contact__mail .github a {
+  margin: var(--padding-size);
+  cursor: pointer;
+  font-size: 1.6em;
 }
 
 #contact .contact__detail .contact__image {
